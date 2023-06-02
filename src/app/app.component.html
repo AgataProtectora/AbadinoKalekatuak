@@ -1,10 +1,27 @@
-
 <div class="u-topbar">
   <div class="u-content">
     <div class="u-topbar__content">
-      <a class="u-topbar__link" href="mailto:email@email.com">email@email.com</a>
-      <div><a href="https://www.instagram.com/" target="_blank"><img class="u-social-icon u-social-icon--small" src="../../../assets/img/instagram-dark.svg" alt=""></a></div>
-      <div><a href="https://www.facebook.com/" target="_blank"><img class="u-social-icon u-social-icon--small" src="../../../assets/img/facebook-dark.svg" alt=""></a></div>
+      <a class="u-topbar__link" href="mailto:abadinokalekatuak@gmail.com"
+        >abadinokalekatuak@gmail.com</a
+      >
+      <div>
+        <a href="https://www.instagram.com/abadino_kalekatuak/" target="_blank"
+          ><img
+            class="u-social-icon u-social-icon--small"
+            src="../../../assets/img/instagram-dark.svg"
+            alt=""
+        /></a>
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/profile.php?id=100089041623101"
+          target="_blank"
+          ><img
+            class="u-social-icon u-social-icon--small"
+            src="../../../assets/img/facebook-dark.svg"
+            alt=""
+        /></a>
+      </div>
     </div>
   </div>
 </div>
@@ -12,63 +29,103 @@
 <!-- En caso de querer una imagen encima del menú, descomentar esta línea
 <div id="inicio" class="u-header"></div> -->
 
-
 <div class="u-menu">
   <div class="u-content">
     <div class="u-navbar">
       <div class="u-navbar__burger" (click)="presentMenu($event)">
-        <span class="u-navbar__burger-menu" [ngClass]="isMenuVisible ? 'u-navbar__burger-menu--open' : ''">
-            <span class="u-navbar__burger-menu-line"></span>
-            <span class="u-navbar__burger-menu-line"></span>
-            <span class="u-navbar__burger-menu-line"></span>
+        <span
+          class="u-navbar__burger-menu"
+          [ngClass]="isMenuVisible ? 'u-navbar__burger-menu--open' : ''"
+        >
+          <span class="u-navbar__burger-menu-line"></span>
+          <span class="u-navbar__burger-menu-line"></span>
+          <span class="u-navbar__burger-menu-line"></span>
         </span>
       </div>
 
       <div class="u-navbar__brand" [routerLink]="['']">
-        <img width="60" src="assets/img/logo.jpg" alt="">
-        <div class="u-navbar__name">Nombre<br class="hidden-xs"> de la asociación</div>
+        <img width="100" src="assets/img/logo.png" alt="" />
       </div>
 
-      <div class="u-navbar__menu" [ngClass]="isMenuVisible ? 'u-navbar__menu--open' : ''">
+      <div
+        class="u-navbar__menu"
+        [ngClass]="isMenuVisible ? 'u-navbar__menu--open' : ''"
+      >
         <div class="u-navbar__menu-list">
-          <a class="u-navbar__menu-item"
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/inicio']"
-            (click)="closeMenu()">Inicio</a>
-          <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >Inicio</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/sobre-nosotros']"
-            (click)="closeMenu()">Nosotr@s</a>
-          <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >Nosotr@s</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/colabora']"
-            (click)="closeMenu()">Colabora</a>
-          <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >Colabora</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/casa-de-acogida']"
-            (click)="closeMenu()">Casa de acogida</a>
-          <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >Casa de acogida</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/adopta']"
-            (click)="closeMenu()">¡Adopta!</a>
-            <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >¡Adopta!</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/adoptados']"
-            (click)="closeMenu()">Adoptados</a>
-            <a class="u-navbar__menu-item"
+            (click)="closeMenu()"
+            >Adoptados</a
+          >
+          <a
+            class="u-navbar__menu-item"
             [routerLink]="['/apadrina']"
-            (click)="closeMenu()">Apadrina</a>
+            (click)="closeMenu()"
+            >Apadrina</a
+          >
         </div>
         <div class="u-navbar__mobile-rrss">
-          <div><a href="https://www.instagram.com" target="_blank"><img class="u-social-icon" src="../../../assets/img/instagram-dark.svg" alt=""></a></div>
-          <div><a href="https://www.facebook.com" target="_blank"><img class="u-social-icon" src="../../../assets/img/facebook-dark.svg" alt=""></a></div>
+          <div>
+            <a
+              href="https://www.instagram.com/abadino_kalekatuak/"
+              target="_blank"
+              ><img
+                class="u-social-icon"
+                src="../../../assets/img/instagram-dark.svg"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100089041623101"
+              target="_blank"
+              ><img
+                class="u-social-icon"
+                src="../../../assets/img/facebook-dark.svg"
+                alt=""
+            /></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<div id="inicio" class="u-header">
-  <div class="u-content">
+<div id="inicio">
+  <div class="u-content u-header">
     <div class="u-header-content">
-      <h1>Nombre<br>asociación</h1>
-      <h2 class="u-header-subtitle">Asociación de Protección Animal sin ánimo de lucro dedicada a ayudar a los animales callejeros en Madrid.</h2>
-      <div><a class="u-button" href="https://www.teaming.net" target="_blank">¡Únete a nuestro Teaming!</a></div>
+      <h1 class="u-header-content__title">Abadiño Kalekatuak</h1>
     </div>
   </div>
 </div>
@@ -76,4 +133,3 @@
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
-
