@@ -1,0 +1,34 @@
+export class IAnimal {
+  id: string;
+  name?: string;
+  specieId?: number;
+  subspecie?: string;
+  breed?: string;
+  gender?: string;
+  genderId?: number;
+  isSterilized?: boolean;
+  isVaccinated?: boolean;
+  birthDate?: Date;
+  status?: string;
+  placeText?: string;
+  compatibleWith?: string;
+  health?: string;
+  behaviour?: string;
+  story?: string;
+  chip?: string;
+  imageUrl?: string;
+  principalImageFileName?: string;
+  needLiscense?: boolean;
+  moreInfoLink?: string;
+  adoptionDate?: Date;
+  passAwayDate?: Date;
+  creationDate: Date;
+  showInAdoptionPage: boolean;
+  showInAdoptedPage: boolean;
+  showInSponsorPage: boolean;
+  place?: string;
+  localizationId?: number;
+  localizationName?: string;
+  fur?: string;
+  extraInformation?: string;
+}
